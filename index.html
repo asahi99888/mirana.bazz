@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTokコンサル事業 - mirana bazz</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .bg-tiktok {
+            background-color: #00f2ea;
+        }
+        .text-tiktok {
+            color: #00f2ea;
+        }
+        .bg-tiktok-dark {
+            background-color: #ff0050;
+        }
+        .text-tiktok-dark {
+            color: #ff0050;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #00f2ea 0%, #ff0050 100%);
+        }
+        .service-card {
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .btn-gradient {
+            background: linear-gradient(90deg, #00f2ea, #ff0050);
+            transition: all 0.3s ease;
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(90deg, #00ddd6, #e80049);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 0, 80, 0.3);
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="fixed w-full bg-white z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="font-bold text-xl flex items-center">
+                <span class="text-tiktok-dark mr-1">TikTok</span><span>コンサル</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#problems" class="hover:text-tiktok-dark transition">お悩み</a>
+                <a href="#benefits" class="hover:text-tiktok-dark transition">メリット</a>
+                <a href="#services" class="hover:text-tiktok-dark transition">サービス内容</a>
+                <a href="#plans" class="hover:text-tiktok-dark transition">料金プラン</a>
+            </div>
+            <a href="#contact" class="btn-gradient text-white px-6 py-2 rounded-full font-medium hidden md:block">お問い合わせ</a>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="relative pt-32 pb-24 bg-black text-white">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    <span class="text-tiktok">TikTok</span>運用を全て丸投げ
+                </h1>
+                <p class="text-xl md:text-2xl mb-10">SNSで成果が出ない採用活動に。TikTok運用で"応募が絶えない"状況をつくります。</p>
+                <a href="#contact" class="btn-gradient text-white px-8 py-4 rounded-full text-lg font-medium inline-block">無料相談はこちら</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- お悩みセクション -->
+    <section id="problems" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">こんなお悩み、ありませんか？</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <ul class="space-y-6">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-tiktok-dark mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-lg">SNSで採用に取り組んでいるが、なかなか効果が出ない</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-tiktok-dark mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-lg">SNSをやりたいけど、ノウハウも時間もない</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-tiktok-dark mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-lg">人材の応募が全く来ない</span>
+                        </li>
+                    </ul>
+                </div>
+                <p class="text-xl text-center font-medium mt-10">そんな中小企業の課題を、<br class="md:hidden"><span class="text-tiktok-dark font-bold">TikTok運用代行</span>で解決します。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービス内容 -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">企画から運用まで、すべてお任せください。</h2>
+            <p class="text-center text-xl mb-16">ワンストップのTikTok運用代行サービス</p>
+
+            <div class="max-w-5xl mx-auto">
+                <div class="service-grid">
+                    <!-- 左上 -->
+                    <div class="service-card bg-white p-8">
+                        <div class="text-tiktok text-4xl mb-4"><i class="fas fa-sitemap"></i></div>
+                        <h3 class="text-xl font-bold mb-4">アカウント設計</h3>
+                        <p class="text-gray-600">ターゲット設定／KPI設計／アカウント方針立案</p>
+                    </div>
+                    
+                    <!-- 右上 -->
+                    <div class="service-card bg-white p-8">
+                        <div class="text-tiktok-dark text-4xl mb-4"><i class="fas fa-video"></i></div>
+                        <h3 class="text-xl font-bold mb-4">動画企画・撮影・編集</h3>
+                        <p class="text-gray-600">現場や社員、製品の魅力を最大化する企画・撮影</p>
+                    </div>
+                    
+                    <!-- 左下 -->
+                    <div class="service-card bg-white p-8">
+                        <div class="text-tiktok-dark text-4xl mb-4"><i class="fas fa-upload"></i></div>
+                        <h3 class="text-xl font-bold mb-4">投稿・運用</h3>
+                        <p class="text-gray-600">最適なタイミングで投稿、エンゲージメントの最大化</p>
+                    </div>
+                    
+                    <!-- 右下 -->
+                    <div class="service-card bg-white p-8">
+                        <div class="text-tiktok text-4xl mb-4"><i class="fas fa-chart-bar"></i></div>
+                        <h3 class="text-xl font-bold mb-4">分析・レポート</h3>
+                        <p class="text-gray-600">再生数、保存数、応募への影響などを定量評価</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金プラン -->
+    <section id="plans" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">料金プラン</h2>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-center mb-2">ハーフサポートプラン</h3>
+                        <p class="text-center text-gray-600 mb-6">月1回撮影同行+編集+投稿アドバイス・戦略設計支援</p>
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold">150,000</span>
+                            <span class="text-xl">円/月</span>
+                        </div>
+                        <p class="text-center text-gray-600 mb-8">（月10投稿）</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-tiktok">
+                        <div class="absolute top-0 right-0 bg-tiktok-dark text-white text-sm py-1 px-4 rounded-bl-lg font-medium">おすすめ</div>
+                        <h3 class="text-2xl font-bold text-center mb-2">フルサポートプラン</h3>
+                        <p class="text-center text-gray-600 mb-6">企画・撮影編集・投稿設計・分析までフルサポート</p>
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold">250,000</span>
+                            <span class="text-xl">円/月</span>
+                        </div>
+                        <p class="text-center text-gray-600 mb-8">（月10投稿）</p>
+                    </div>
+                </div>
+                <p class="text-center mt-8 text-gray-600">※各プランの金額は動画制作本数によって要相談</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">お問い合わせ</h2>
+            
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <h3 class="text-2xl font-bold mb-6">無料相談を実施中！</h3>
+                    <p class="mb-8">TikTok運用についてのご質問や、サービスに関するお問い合わせはこちらからどうぞ。</p>
+                    
+                    <a href="mailto:a.takase.upd@gmail.com" class="btn-gradient text-white px-8 py-4 rounded-full text-lg font-medium inline-block">
+                        <i class="fas fa-envelope mr-2"></i>メールでのお問い合わせ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="py-10 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <p class="text-gray-400 text-sm">© 2025 mirana bazz All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // スクロール時のナビゲーションバーの背景変更
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+        
+        // アンカーリンクのスムーススクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const headerOffset = 100;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
